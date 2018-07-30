@@ -1,0 +1,85 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5e828ab4-0d0c-4da3-9181-0fa167bda52c</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>program.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>ml-spec</Name>
+    <RootNamespace>ml-spec</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="course1_math_and_python\root.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course1_math_and_python\week2.py" />
+    <Compile Include="course1_math_and_python\week1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course1_math_and_python\week4.py" />
+    <Compile Include="course1_math_and_python\week3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course1_math_and_python\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course2_supervised_learning\root.py" />
+    <Compile Include="course2_supervised_learning\week5.py" />
+    <Compile Include="course2_supervised_learning\week4.py" />
+    <Compile Include="course2_supervised_learning\week3.py" />
+    <Compile Include="course2_supervised_learning\week2.py" />
+    <Compile Include="course2_supervised_learning\week1.py" />
+    <Compile Include="course2_supervised_learning\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course3_structure_in_data\root.py" />
+    <Compile Include="course3_structure_in_data\week4.py" />
+    <Compile Include="course3_structure_in_data\week3.py" />
+    <Compile Include="course3_structure_in_data\week2.py" />
+    <Compile Include="course3_structure_in_data\week1.py" />
+    <Compile Include="course3_structure_in_data\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="course4_data_conclusions\root.py" />
+    <Compile Include="course4_data_conclusions\week4.py" />
+    <Compile Include="course4_data_conclusions\week3.py" />
+    <Compile Include="course4_data_conclusions\week2.py" />
+    <Compile Include="course4_data_conclusions\week1.py" />
+    <Compile Include="course4_data_conclusions\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="utils.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="program.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="course1_math_and_python\" />
+    <Folder Include="course2_supervised_learning\" />
+    <Folder Include="F:\Work\My\Python\courses\courserra\ml-specialization\proj\course1_math_and_python\" />
+    <Folder Include="F:\Work\My\Python\courses\courserra\ml-specialization\proj\course2_supervised_learning\" />
+    <Folder Include="course3_structure_in_data\" />
+    <Folder Include="F:\Work\My\Python\courses\courserra\ml-specialization\proj\course4_data_conclusions\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
